@@ -12,7 +12,7 @@ export default {
     const url = new URL(request.url);
     const sessionIdStr = url.searchParams.get('sessionId')
     const id = sessionIdStr
-        ? env.PERFORMANCE_TRACKER_MCP.idFromString(sessionIdStr)
+        ? env.PERFORMANCE_TRACKER_MCP.idFromName(sessionIdStr)
         : env.PERFORMANCE_TRACKER_MCP.newUniqueId();
 
     console.log(`Performance Tracker - sessionId: ${sessionIdStr} with id: ${id}`);

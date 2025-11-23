@@ -13,7 +13,7 @@ export default {
     const url = new URL(request.url);
     const sessionIdStr = url.searchParams.get('sessionId')
     const id = sessionIdStr
-        ? env.NEWS_SENTIMENT_MCP.idFromString(sessionIdStr)
+        ? env.NEWS_SENTIMENT_MCP.idFromName(sessionIdStr)
         : env.NEWS_SENTIMENT_MCP.newUniqueId();
 
     console.log(`News Sentiment MCP - sessionId: ${sessionIdStr} with id: ${id}`);

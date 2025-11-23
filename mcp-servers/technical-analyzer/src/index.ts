@@ -11,7 +11,7 @@ export default {
     const url = new URL(request.url);
     const sessionIdStr = url.searchParams.get('sessionId')
     const id = sessionIdStr
-        ? env.TECHNICAL_ANALYZER_MCP.idFromString(sessionIdStr)
+        ? env.TECHNICAL_ANALYZER_MCP.idFromName(sessionIdStr)
         : env.TECHNICAL_ANALYZER_MCP.newUniqueId();
 
     console.log(`Technical Analyzer - sessionId: ${sessionIdStr} with id: ${id}`);

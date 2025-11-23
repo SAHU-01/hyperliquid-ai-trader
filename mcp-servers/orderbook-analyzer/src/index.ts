@@ -11,7 +11,7 @@ export default {
     const url = new URL(request.url);
     const sessionIdStr = url.searchParams.get('sessionId')
     const id = sessionIdStr
-        ? env.ORDERBOOK_ANALYZER_MCP.idFromString(sessionIdStr)
+        ? env.ORDERBOOK_ANALYZER_MCP.idFromName(sessionIdStr)
         : env.ORDERBOOK_ANALYZER_MCP.newUniqueId();
 
     console.log(`Orderbook Analyzer - sessionId: ${sessionIdStr} with id: ${id}`);

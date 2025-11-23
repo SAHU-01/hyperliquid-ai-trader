@@ -11,7 +11,7 @@ export default {
     const url = new URL(request.url);
     const sessionIdStr = url.searchParams.get('sessionId')
     const id = sessionIdStr
-        ? env.SIGNAL_GENERATOR_MCP.idFromString(sessionIdStr)
+        ? env.SIGNAL_GENERATOR_MCP.idFromName(sessionIdStr)
         : env.SIGNAL_GENERATOR_MCP.newUniqueId();
 
     console.log(`Signal Generator - sessionId: ${sessionIdStr} with id: ${id}`);

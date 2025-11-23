@@ -11,7 +11,7 @@ export default {
     const url = new URL(request.url);
     const sessionIdStr = url.searchParams.get('sessionId')
     const id = sessionIdStr
-        ? env.HYPERLIQUID_TRADER_MCP.idFromString(sessionIdStr)
+        ? env.HYPERLIQUID_TRADER_MCP.idFromName(sessionIdStr)
         : env.HYPERLIQUID_TRADER_MCP.newUniqueId();
 
     console.log(`Hyperliquid Trader - sessionId: ${sessionIdStr} with id: ${id}`);
