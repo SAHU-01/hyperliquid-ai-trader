@@ -1,0 +1,30 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "performance-tracker-mcp",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-04-17",
+	"observability": {
+		"enabled": true
+	},
+	"durable_objects": {
+		"bindings": [
+		{
+			"name": "PERFORMANCE_TRACKER_MCP",
+			"class_name": "PerformanceTrackerMcp"
+		}
+		]
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "trading-db",
+			"database_id": "f46447d4-9f14-45f5-bd5c-24f4635ebdbd"
+		}
+	],
+	"migrations": [
+		{
+		"tag": "v1",
+		"new_sqlite_classes": ["PerformanceTrackerMcp"]
+		}
+  	]
+}
