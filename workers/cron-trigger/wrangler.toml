@@ -1,0 +1,14 @@
+name = "trading-cron-trigger"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "trading-db"
+database_id = "f46447d4-9f14-45f5-bd5c-24f4635ebdbd"
+
+[vars]
+AGENT_URL = "https://hyperliquid-trading-agent.sahuankitaofc-1.workers.dev"
