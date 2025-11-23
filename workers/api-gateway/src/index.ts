@@ -3,7 +3,6 @@ interface Env {
   PERFORMANCE_MCP_URL: string;
 }
 
-// CORS headers
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
@@ -24,8 +23,8 @@ export default {
         const { wallet, apiSecret, riskLevel } = await request.json() as any;
 
         await env.DB.prepare(
-          'INSERT OR REPLACE INTO users (main_wallet, api_secret, risk_level) VALUES (?, ?, ?)'
-        ).bind(wallet, apiSecret, riskLevel || 'balanced').run();
+          'INSERT OR REPLACE INTO users (main_wallet, hl_api_address, hl_api_secret_key, api_secret, risk_level) VALUES (?, ?, ?, ?, ?)'
+        ).bind(wallet, wallet, apiSecret, apiSecret, riskLevel || 'balanced').run();
 
         return Response.json({ 
           success: true, 
@@ -151,7 +150,6 @@ export default {
           }, { status: 404, headers: corsHeaders });
         }
 
-        // Call Performance Tracker MCP
         const response = await fetch(env.PERFORMANCE_MCP_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

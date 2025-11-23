@@ -1,22 +1,22 @@
 {
 	"mcpServers": {
 		"news-sentiment": {
-			"url": "https://news-sentiment-mcp.sahuankitaofc-1.workers.dev"
+			"url": "https://news-sentiment-mcp.sahuankitaofc-1.workers.dev/mcp"
 		},
 		"orderbook-analyzer": {
-			"url": "https://orderbook-analyzer-mcp.sahuankitaofc-1.workers.dev"
+			"url": "https://orderbook-analyzer-mcp.sahuankitaofc-1.workers.dev/mcp"
 		},
 		"technical-analyzer": {
-			"url": "https://technical-analyzer-mcp.sahuankitaofc-1.workers.dev"
+			"url": "https://technical-analyzer-mcp.sahuankitaofc-1.workers.dev/mcp"
 		},
 		"signal-generator": {
-			"url": "https://signal-generator-mcp.sahuankitaofc-1.workers.dev"
+			"url": "https://signal-generator-mcp.sahuankitaofc-1.workers.dev/mcp"
 		},
 		"hyperliquid-trader": {
-			"url": "https://hyperliquid-trader-mcp.sahuankitaofc-1.workers.dev"
+			"url": "https://hyperliquid-trader-mcp.sahuankitaofc-1.workers.dev/mcp"
 		},
 		"performance-tracker": {
-			"url": "https://performance-tracker-mcp.sahuankitaofc-1.workers.dev"
+			"url": "https://performance-tracker-mcp.sahuankitaofc-1.workers.dev/mcp"
 		}
 	}
 }

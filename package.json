@@ -12,7 +12,7 @@
     "test": "bash scripts/test-system.sh"
   },
   "keywords": ["ai", "trading", "hyperliquid", "nullshot", "mcp", "web3"],
-  "author": "Your Name",
+  "author": "Ankita Sahu",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.6.3"

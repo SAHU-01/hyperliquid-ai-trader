@@ -1,0 +1,13 @@
+
+NEWS_MCP_URL=https://news-sentiment-mcp.sahuankitaofc-1.workers.dev
+
+ORDERBOOK_MCP_URL=https://orderbook-analyzer-mcp.sahuankitaofc-1.workers.dev
+
+TECHNICAL_MCP_URL=https://technical-analyzer-mcp.sahuankitaofc-1.workers.dev
+
+SIGNAL_MCP_URL=https://signal-generator-mcp.sahuankitaofc-1.workers.dev
+
+HL_MCP_URL=https://hyperliquid-trader-mcp.sahuankitaofc-1.workers.dev
+
+PERFORMANCE_MCP_URL=https://performance-tracker-mcp.sahuankitaofc-1.workers.dev
+
