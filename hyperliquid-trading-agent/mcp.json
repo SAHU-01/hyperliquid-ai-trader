@@ -1,0 +1,22 @@
+{
+	"mcpServers": {
+		"news-sentiment": {
+			"url": "https://news-sentiment-mcp.sahuankitaofc-1.workers.dev"
+		},
+		"orderbook-analyzer": {
+			"url": "https://orderbook-analyzer-mcp.sahuankitaofc-1.workers.dev"
+		},
+		"technical-analyzer": {
+			"url": "https://technical-analyzer-mcp.sahuankitaofc-1.workers.dev"
+		},
+		"signal-generator": {
+			"url": "https://signal-generator-mcp.sahuankitaofc-1.workers.dev"
+		},
+		"hyperliquid-trader": {
+			"url": "https://hyperliquid-trader-mcp.sahuankitaofc-1.workers.dev"
+		},
+		"performance-tracker": {
+			"url": "https://performance-tracker-mcp.sahuankitaofc-1.workers.dev"
+		}
+	}
+}
