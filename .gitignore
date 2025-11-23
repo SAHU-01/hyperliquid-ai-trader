@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+package-lock.json
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.local
+.env.production
+.dev.vars
+wrangler.toml.local
+
+# CRITICAL: Never commit these!
+**/hl_api_secret_key*
+**/*private*key*
+**/*secret*
+.env.secrets
+
+# Build outputs
+dist/
+build/
+.wrangler/
+.mf/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary
+tmp/
+temp/

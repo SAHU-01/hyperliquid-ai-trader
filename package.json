@@ -1,0 +1,20 @@
+{
+  "name": "hyperliquid-ai-trader",
+  "version": "1.0.0",
+  "description": "AI-powered trading system for Hyperliquid using NullShot framework",
+  "type": "module",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "deploy:mcps": "bash scripts/deploy-mcps.sh",
+    "deploy:agent": "cd agent && npm install && npm run deploy",
+    "deploy:workers": "bash scripts/deploy-workers.sh",
+    "deploy:frontend": "cd frontend && npm run deploy",
+    "test": "bash scripts/test-system.sh"
+  },
+  "keywords": ["ai", "trading", "hyperliquid", "nullshot", "mcp", "web3"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
